@@ -4,7 +4,6 @@ Train a new molecular model on one or across multiple GPUs.
 """
 
 import collections
-import itertools
 import math
 import os
 import random

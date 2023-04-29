@@ -38,7 +38,7 @@ class FairseqAdam(FairseqOptimizer):
         """
         return {
             'lr': self.args.lr[0],
-            'betas': eval(self.args.adam_betas),
+            'betas': (0.9, 0.999),
             'eps': self.args.adam_eps,
             'weight_decay': self.args.weight_decay,
         }
